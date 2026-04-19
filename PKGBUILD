@@ -1,8 +1,8 @@
 # Maintainer: @zstg <zestig@duck.com>
-pkgname=stratos-waybar-config
+pkgname=stratos-waybar-hyprland-config
 pkgver=1.0
-pkgrel=7
-pkgdesc="Waybar configuration for StratOS"
+pkgrel=8
+pkgdesc="Hyprland Waybar's configuration for StratOS"
 # provides=('stratos-waybar-hyprland-config' 'stratos-waybar-niri-config')
 arch=('any')
 license=('GPL3')
@@ -12,7 +12,7 @@ depends=(
 )
 source=()
 optdepends=('ttf-jetbrains-mono-nerd: Default nerd font')
-install=stratos-waybar-config.install
+install=stratos-waybar-hyprland-config.install
 prepare() {
     cp -r "$startdir"/.config/ "$srcdir"/
     cp -r "$startdir"/usr/local/bin/ "$srcdir"/
